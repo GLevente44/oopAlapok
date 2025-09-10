@@ -11,18 +11,48 @@ namespace OpAlapok
 
         public class Szemely
         {
-            public string nev = "Levi";
-            public int kor = 1000;
+            private string nev;
+            private int kor;
+
+            public string Nev { 
+
+                get { return nev; } 
+                set { nev = value; }
+            
+            }
+
+            public string Kor
+            {
+
+                get { return Kor; }
+                set { Kor = value; }
+
+            }
+
+
+
+            //public Szemely(string Nev, int Kor)
+            //{
+            //    nev = Nev;
+            //    kor = Kor;
+            //}
+
+            //public string Kiir()
+            //{
+            //    return $"A tanuló neve: {nev} és {kor} éves";
+
+            //}
         }
 
         static void Main(string[] args)
         {
             Szemely tanulo1 = new Szemely();
-            Console.WriteLine($"A tanuló neve: {tanulo1.nev} és {tanulo1.kor} éves");
-
-
-
-
+            tanulo1.Nev = "Gábor";
+            Console.WriteLine(tanulo1.Nev);
+            //Szemely tanulo1 = new Szemely("Jani",55);
+            //Console.WriteLine(tanulo1.Kiir());
+            //Szemely tanulo2 = new Szemely("Ildi", 45);
+            //Console.WriteLine(tanulo2.Kiir());
 
         }
     }
