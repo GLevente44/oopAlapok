@@ -5,3 +5,4 @@ U:\GL_Asztalialkalmazas\OpAlapok\OpAlapok\obj\Debug\OpAlapok.csproj.AssemblyRefe
 U:\GL_Asztalialkalmazas\OpAlapok\OpAlapok\obj\Debug\OpAlapok.csproj.CoreCompileInputs.cache
 U:\GL_Asztalialkalmazas\OpAlapok\OpAlapok\obj\Debug\OpAlapok.exe
 U:\GL_Asztalialkalmazas\OpAlapok\OpAlapok\obj\Debug\OpAlapok.pdb
+U:\GL_Asztalialkalmazas\OpAlapok\OpAlapok\obj\Debug\OpAlapok.exe.config

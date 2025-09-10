@@ -21,7 +21,7 @@ namespace OpAlapok
             
             }
 
-            public string Kor
+            public int Kor
             {
 
                 get { return Kor; }
@@ -49,6 +49,8 @@ namespace OpAlapok
             Szemely tanulo1 = new Szemely();
             tanulo1.Nev = "Gábor";
             Console.WriteLine(tanulo1.Nev);
+            tanulo1.Kor = 20;
+            Console.WriteLine(tanulo1.Kor);
             //Szemely tanulo1 = new Szemely("Jani",55);
             //Console.WriteLine(tanulo1.Kiir());
             //Szemely tanulo2 = new Szemely("Ildi", 45);
