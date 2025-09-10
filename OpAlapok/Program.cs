@@ -29,6 +29,11 @@ namespace OpAlapok
 
             }
 
+            public override string ToString()
+            {
+                return $"A személy neve {nev} életkora: {kor}";
+            }
+
 
 
             //public Szemely(string Nev, int Kor)
@@ -48,13 +53,14 @@ namespace OpAlapok
         {
             Szemely tanulo1 = new Szemely();
             tanulo1.Nev = "Gábor";
-            Console.WriteLine(tanulo1.Nev);
             tanulo1.Kor = 20;
-            Console.WriteLine(tanulo1.Kor);
+
+            Console.WriteLine(tanulo1);  
             //Szemely tanulo1 = new Szemely("Jani",55);
             //Console.WriteLine(tanulo1.Kiir());
             //Szemely tanulo2 = new Szemely("Ildi", 45);
             //Console.WriteLine(tanulo2.Kiir());
+
 
         }
     }
