@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,8 +73,22 @@ namespace OpAlapok
         
         public class Hallgato : Szemely
         {
-            public int neptunKod;
+            private string neptunKod;
 
+            public string NeptuKod
+            {
+                get { return neptunKod; }
+                set {
+                    if (value.Length <= 6)
+                    {
+                        neptunKod = value; 
+                    }
+                    else
+                    {
+                        Console.WriteLine("Nem megfelelő hosszúság!");
+                    }
+                }
+            }
             public void Kiir()
             {
                 nev = string.Empty;
@@ -85,13 +100,15 @@ namespace OpAlapok
             Szemely tanulo1 = new Szemely();
             tanulo1.Nev = "Gábor";
             tanulo1.Kor = 20;
-
-            Console.WriteLine(tanulo1);  
-         
+            Console.WriteLine(tanulo1);
+            Console.WriteLine("--------------------");
             Bankszamla bankszamla1 = new Bankszamla();
             bankszamla1.Egyenleg = -5700;
             Console.WriteLine(bankszamla1.Egyenleg);
-
+            Console.WriteLine("-----------------------");
+            Hallgato hallgato1 = new Hallgato();
+            hallgato1.NeptuKod = "asdasd";
+            Console.WriteLine(hallgato1.NeptuKod);
         }
     }
 }
