@@ -11,7 +11,7 @@ namespace OpAlapok
 
         public class Szemely
         {
-            private string nev;
+            protected string nev;
             private int kor;
 
             public string Nev { 
@@ -70,6 +70,15 @@ namespace OpAlapok
 
         }
         
+        public class Hallgato : Szemely
+        {
+            public int neptunKod;
+
+            public void Kiir()
+            {
+                nev = string.Empty;
+            }
+        }
 
         static void Main(string[] args)
         {
