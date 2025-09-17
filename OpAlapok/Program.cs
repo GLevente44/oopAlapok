@@ -24,8 +24,8 @@ namespace OpAlapok
             public int Kor
             {
 
-                get { return Kor; }
-                set { Kor = value; }
+                get { return kor; }
+                set { kor = value; }
 
             }
 
@@ -33,21 +33,43 @@ namespace OpAlapok
             {
                 return $"A személy neve {nev} életkora: {kor}";
             }
-
-
-
-            //public Szemely(string Nev, int Kor)
-            //{
-            //    nev = Nev;
-            //    kor = Kor;
-            //}
-
-            //public string Kiir()
-            //{
-            //    return $"A tanuló neve: {nev} és {kor} éves";
-
-            //}
         }
+
+        public class Bankszamla
+        {
+            private int egyenleg;
+
+            public int Egyenleg
+            {
+                get { return egyenleg; }
+                set 
+                {
+                    if (value >= 0)
+                    {
+                        
+                    egyenleg = value; 
+                    }
+                    else
+                    {
+                        Console.WriteLine("Az érték nem lehet negatív.");
+                    }
+
+                }
+            }
+
+            public void Betesz()
+            {
+
+            }
+
+            public void Kivesz()
+            {
+
+            }
+
+
+        }
+        
 
         static void Main(string[] args)
         {
@@ -56,11 +78,10 @@ namespace OpAlapok
             tanulo1.Kor = 20;
 
             Console.WriteLine(tanulo1);  
-            //Szemely tanulo1 = new Szemely("Jani",55);
-            //Console.WriteLine(tanulo1.Kiir());
-            //Szemely tanulo2 = new Szemely("Ildi", 45);
-            //Console.WriteLine(tanulo2.Kiir());
-
+         
+            Bankszamla bankszamla1 = new Bankszamla();
+            bankszamla1.Egyenleg = -5700;
+            Console.WriteLine(bankszamla1.Egyenleg);
 
         }
     }
